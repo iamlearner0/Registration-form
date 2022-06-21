@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(249, 10%, 26%);
+  font-size: 16px;
+}
+
+main {
+  min-width: 375px;
+  height: 100vh;
+  font-family: "Poppins";
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-image: url(./bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+}
+
+@media (min-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./bg-intro-desktop.png);
+    width: 100%;
+  }
+}
+
+.top-div {
+  color: white;
+  padding: 2em 0.2em;
+  /* background-color: black; */
+}
+
+.top-div h3 {
+  font-size: 28px;
+  max-width: 220px;
+  margin: auto;
+}
+
+.top-div p {
+  font-weight: 300;
+  max-width: 280px;
+  margin: auto;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.try-btn {
+  padding: 1em 3em;
+}
+
+.try-month {
+  width: 100%;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  height: 5em;
+  padding: 1em 5em;
+  line-height: 20px;
+}
+
+.form {
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px 3em;
+  height: 47vh;
+  padding: 1em;
+}
+
+.form ul {
+  list-style: none;
+}
+
+.form input {
+  color: hsl(246, 25%, 77%);
+  border-radius: 3px;
+  border-style: solid;
+  height: 3em;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 0.8em;
+}
+
+.form .claim {
+  font-size: 12px;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  font-weight: 200;
+  height: 3em;
+  text-align: center;
+  border-style: none;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.form p {
+  font-size: 14px;
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+  /* padding-bottom: 3em; */
+}
+
+.form strong {
+  color: hsl(0, 100%, 74%);
+}
