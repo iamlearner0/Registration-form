@@ -10,28 +10,35 @@ body {
 }
 
 main {
-  min-width: 375px;
+  /* min-width: 375px; */
   height: 100vh;
   font-family: "Poppins";
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
   background-image: url(./bg-intro-mobile.png);
   background-color: hsl(0, 100%, 74%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4em;
 }
 
-@media (min-width: 800px) {
+@media screen and (max-width: 819px) {
   main {
-    display: flex;
-    flex-direction: row;
-    background-image: url(./bg-intro-desktop.png);
-    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    padding: 0;
   }
 }
 
 .top-div {
   color: white;
   padding: 2em 0.2em;
+  flex-basis: 50%;
+  text-align: center;
   /* background-color: black; */
 }
 
@@ -59,9 +66,24 @@ main {
   border-radius: 5px;
   border-style: none;
   color: white;
-  height: 5em;
+  height: 4em;
   padding: 1em 5em;
   line-height: 20px;
+}
+
+@media screen and (max-width: 1042px) and (min-width: 820px) {
+  .try-month {
+    padding: 1.5em 5em;
+    height: 5em;
+    line-height: 15px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .try-month {
+    padding: 1em 1.5em;
+    height: 6em;
+  }
 }
 
 .form {
