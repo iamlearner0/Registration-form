@@ -5,16 +5,18 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: hsl(249, 10%, 26%);
   font-size: 16px;
 }
 
-main {
-  /* min-width: 375px; */
+.main {
   height: 100vh;
   font-family: "Poppins";
   margin: auto;
   background-image: url(./bg-intro-mobile.png);
+  background-size: cover;
   background-color: hsl(0, 100%, 74%);
   display: flex;
   align-items: center;
@@ -23,52 +25,68 @@ main {
 }
 
 @media screen and (max-width: 819px) {
-  main {
+  .main {
     flex-direction: column;
+    padding-top: 1.5rem;
   }
 }
 
 @media screen and (max-width: 550px) {
-  main {
-    padding: 0;
+  .main {
   }
 }
 
 .top-div {
   color: white;
-  padding: 2em 0.2em;
+  padding: 2em 5em;
   flex-basis: 50%;
-  text-align: center;
-  /* background-color: black; */
+  margin-left: 2rem;
 }
 
 .top-div h3 {
-  font-size: 28px;
-  max-width: 220px;
-  margin: auto;
+  font-size: 48px;
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .top-div {
+    padding: 5em 1em;
+  }
+
+  .top-div h3 {
+    margin-top: 5em;
+    font-size: 32px;
+  }
 }
 
 .top-div p {
-  font-weight: 300;
-  max-width: 280px;
-  margin: auto;
-  text-align: center;
-  padding: 0.5em;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 420px;
 }
 
-.try-btn {
-  padding: 1em 3em;
+.below-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
 }
 
 .try-month {
+  text-align: center;
+  align-self: center;
   width: 100%;
   background-color: hsl(248, 32%, 49%);
   border-radius: 5px;
   border-style: none;
   color: white;
-  height: 4em;
-  padding: 1em 5em;
+  height: 3.5em;
+  padding: 1.2em 3em;
   line-height: 20px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1042px) and (min-width: 820px) {
@@ -79,19 +97,20 @@ main {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 570px) {
   .try-month {
-    padding: 1em 1.5em;
-    height: 6em;
+    padding: 1em;
+    height: 4em;
   }
 }
 
 .form {
+  width: 100%;
   background-color: white;
   border-radius: 5px;
   margin: 10px 3em;
-  height: 47vh;
   padding: 1em;
+  /* padding-bottom: 5em; */
 }
 
 .form ul {
@@ -99,25 +118,31 @@ main {
 }
 
 .form input {
-  color: hsl(246, 25%, 77%);
+  color: #000;
   border-radius: 3px;
-  border-style: solid;
-  height: 3em;
+  border: 0.1px solid #000;
+  height: 3.5em;
   width: 100%;
-  padding: 1em;
-  margin-bottom: 0.8em;
+  padding: 1.5em;
+  margin-bottom: 1em;
 }
 
 .form .claim {
+  width: 100%;
   font-size: 12px;
   background-color: hsl(154, 59%, 51%);
   color: white;
-  font-weight: 200;
-  height: 3em;
+  font-weight: 700;
+  height: 3.5em;
   text-align: center;
   border-style: none;
   border-radius: 5px;
   margin-bottom: 1em;
+}
+
+.form .claim:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .form p {
